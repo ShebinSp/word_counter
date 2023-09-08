@@ -87,7 +87,7 @@ THIS PROGRAM WORKS AS EXPECTED. LET'S ADD THE ABILITY TO COUNT LINES TO THIS TOO
 Here we created a command line flag "-l".
 if the user input "-l" when running the program, then number of lines will appear insted of words.
 **********************************************************************************************************
-cat main.go | ./word_counter -l
+  cat main.go | ./word_counter -l
 **********************************************************************************************************
 
 * check the project on git hub with version.
@@ -97,6 +97,6 @@ cat main.go | ./word_counter -l
 * New feature added countBytes to count the bytes in version 2.1.0
 add command line flag -b to count the number of bytes
 **********************************************************************************************************
-cat main.go | ./word_counter -b
+  cat main.go | ./word_counter -b
 **********************************************************************************************************
 
