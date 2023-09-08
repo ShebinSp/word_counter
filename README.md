@@ -78,7 +78,7 @@ $ echo "My first command line tool with Go" | ./word_counter
 
 Check the words in main.go file using word_counter
 **********************************************************************************************************
-cat main.go | ./word_counter                                       
+                                  cat main.go | ./word_counter                                       
 **********************************************************************************************************
 THIS PROGRAM WORKS AS EXPECTED. LET'S ADD THE ABILITY TO COUNT LINES TO THIS TOOL
 
