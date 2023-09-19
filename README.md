@@ -36,10 +36,10 @@ convenient way of reading data delimited by spaces or new lines. By default, a s
 so we instruct the scanner to read words instead by setting the split function of the scanner to bufio.ScanWords.
 We then define a variable , wCtr, to hold the word count and increment it by looping through each token using the
 scanner.Scan function and adding 1 to the counter each time. We then return the word count
-----------------------------------------------------------------------------------------------------
+
 After compliting the word counter program we have to check the program is working as we expected.
 So to write a test case, create a new file 'main_test.go' in the same location where the 'main.go' is.
-----------------------------------------------------------------------------------------------------
+
 
 TEST
 ----
