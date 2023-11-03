@@ -1,4 +1,4 @@
-// Refer README.md to project instructions.
+// Refer README.md for project instructions and YAMLinfo.md for CI/CD pipeline basics with GitHub Actions.
 package main
 
 import (
@@ -20,7 +20,7 @@ func count(r io.Reader, countLines bool, countBytes bool) int {
 	// the scanner split type to words(default is split by lines)
 	if countLines {
 		scanner.Split(bufio.ScanLines)
-	} else if countBytes{
+	} else if countBytes {
 		scanner.Split(bufio.ScanBytes)
 	} else {
 		scanner.Split(bufio.ScanWords)
@@ -39,12 +39,13 @@ func count(r io.Reader, countLines bool, countBytes bool) int {
 }
 
 func main() {
+
 	// Defining a boolean flag -l to count lines instead of words
 	lines := flag.Bool("l", false, "Count lines")
 
 	// Defining a boolean flag -b to count bytes instead of words or lines
 	bytes := flag.Bool("b", false, "Count bytes")
-	
+
 	// Parsing the flags provided by the user
 	flag.Parse()
 
